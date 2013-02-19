@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+
+    	<link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+
+        <link rel='stylesheet' href='/static/exampleStyle.css' type='text/css' />
+    </head>
+    <body>
+    	<div class="maintable">
+    		<div class="header" align="center">
+	      	<h1> Welcome to the W-ACM Blog! </h1>
+	   		</div>
+
+	   		<div class="entries">
+	        {% for blogPost in blogPosts %}
+	        <div class="avatar">
+      			{{ blogPost.owner.nickname() }}
+      			<br>
+	       		{{ blogPost.date.month }}/{{ blogPost.date.day }}/{{ blogPost.date.year }} at 
+	       		{{ blogPost.getFormattedTime() }}
+	        </div>
+	     		<div class="entry">
+	    			<div class="title">{{ blogPost.title }}</div>
+	       		<br>
+	   				{{ blogPost.content }}
+	   				<br><br>
+	       	    </div>
+	       	<hr>
+            {% endfor %}
+        </div>
+        <div class="submitBox">
+	       	<form id="example" action="example" method="post">
+                <input type="text" name="title" placeholder="Title" col="140"><br>
+                <textarea name="content"></textarea><br />
+                Make this post public: <input type="checkbox" name="isPublic" value="true"> <br />
+	       		<input type="submit" value="Submit">
+	       	</form>
+        </div>
+      </div>
+    </body>
+</html>

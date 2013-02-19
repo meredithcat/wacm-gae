@@ -1,0 +1,83 @@
+body {
+	background: #eee;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+body h1 {
+	font-size: 35px;
+}
+
+.maintable {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	border: 1px solid #999;
+	border-radius: 5px;
+	background: #fff;
+	margin-top: 20px;
+	width:900px;
+	height: 100px;
+	font-family: 'Nova Square', cursive;
+	color: #ffccff;
+	text-shadow: 2px 2px #ff0000;
+}
+.submitBox {
+    width: 240px;
+    display: inline-block;
+    background: #fff;
+	border: 1px solid #999;
+	border-radius: 5px;
+	margin-top: 30px;
+    float: right;
+	padding: 10px;
+}
+.entries {
+    float: left;
+    display: inline-block;
+	width: 600px;
+	background: #fff;
+	border: 1px solid #999;
+	border-radius: 5px;
+	margin-top: 30px;
+	padding: 10px;
+}
+
+.entry {
+	float: left;
+	//border: 1px solid black;
+	//width: 600px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+body hr {
+	width: 100%;
+	display: block;
+	border: none;
+	color: white;
+	height: 1px;
+	background: #bbb;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	float: left;
+	font-size: 11px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    width: 140px;
+    wrap: hard;
+}
+

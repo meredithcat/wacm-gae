@@ -1,0 +1,105 @@
+/* Fonts: 
+ * font-family: 'Droid Serif', serif;       # serif header
+ * font-family: 'Gilda Display', serif;     # serif body
+ * font-family: 'Raleway', sans-serif;      # sans-serif body
+ * */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  padding: 0px;
+  background-color: #f9f9f9;
+  margin: 0px;
+}
+header{
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: auto;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #606060;
+  border-top: thick;
+  border-right: thick;
+  border-left: thick;
+}
+
+header #contents{
+  width: 1000px;
+  height: auto;
+  padding-top: 25px;
+  margin: auto;
+}
+
+header h1 {
+  font-family: 'Droid Serif', serif;
+  font-size: 65px;
+  color: #383838;
+}
+
+#main{
+  margin: auto;
+  width: 1000px;
+  height: auto;
+}
+nav {
+  float: left;
+  width: 200px;
+  height: auto;
+  background: #316664;
+  position: relative;
+}
+
+nav ul{
+  font-family: 'Raleway', sans-serif; 
+  list-style-type: none;
+  padding: 10px 0 0 10px;
+  font-size: 15px;
+}
+
+nav li.head{
+  font-weight: bold;
+  color: #F5F6F6;
+  padding-top: 10px;
+}
+
+a:link, a:visited, a:active{
+  text-decoration: none;
+  color: #F5F6F6; 
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+article{
+  width: 800px;
+  float: right;
+  background: #ECECEC;
+  font-family: 'gilda display', serif; 
+}
+
+article #contents{
+  padding: 10px;
+}
+
+article #contents p{
+  text-indent: 2em;
+}
+
+footer{
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  background:#606060;
+  color:#ffffff;
+  font-family: 'gilda display', serif; 
+}
+
+#loginForm{
+  float: right;
+  height: inherit;
+}
